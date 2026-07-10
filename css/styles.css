@@ -5,13 +5,15 @@
 
 @font-face{
   font-family:'Kenoky';
-  src:url('../fonts/kenoky-light.otf') format('opentype');
+  src:url('../fonts/kenoky-light.woff2') format('woff2'),
+      url('../fonts/kenoky-light.otf') format('opentype');
   font-weight:300 400;
   font-display:swap;
 }
 @font-face{
   font-family:'Coffekan';
-  src:url('../fonts/coffekan-regular.ttf') format('truetype');
+  src:url('../fonts/coffekan-regular.woff2') format('woff2'),
+      url('../fonts/coffekan-regular.ttf') format('truetype');
   font-weight:400;
   font-display:swap;
 }
@@ -91,7 +93,8 @@ section{position:relative;}
 .btn-ghost:hover{border-color:var(--marron);background:rgba(72,55,32,.04);}
 .btn-light{background:var(--arena);color:var(--marron);}
 .btn-light:hover{background:var(--blanco);}
-:focus-visible{outline:2px solid var(--ocre);outline-offset:3px;}
+:focus-visible{outline:2px solid var(--marron);outline-offset:3px;
+  box-shadow:0 0 0 5px var(--crema);border-radius:3px;}
 
 /* ============================================================
    NAV
@@ -251,13 +254,13 @@ section{position:relative;}
   padding-bottom:40px;border-bottom:1px solid rgba(212,194,163,.2);}
 .footer .brand{color:var(--crema);font-size:32px;}
 .footer .brand small{color:var(--arena);}
-.footer .fcol h4{font-family:var(--font-body);font-weight:600;text-transform:uppercase;
-  letter-spacing:.2em;font-size:11px;color:var(--arena);margin-bottom:14px;}
+.footer .fcol h3{font-family:var(--font-body);font-weight:600;text-transform:uppercase;
+  letter-spacing:.2em;font-size:11px;color:var(--arena);margin-bottom:14px;line-height:1;}
 .footer .fcol a{display:block;color:rgba(246,241,232,.72);font-size:14.5px;margin-bottom:9px;transition:color .3s;}
 .footer .fcol a:hover{color:var(--crema);}
 .footer .cols{display:flex;gap:clamp(30px,6vw,80px);flex-wrap:wrap;}
 .footer .bottom{padding-top:26px;display:flex;justify-content:space-between;gap:16px;
-  flex-wrap:wrap;font-size:12.5px;color:rgba(246,241,232,.5);}
+  flex-wrap:wrap;font-size:12.5px;color:rgba(246,241,232,.72);}
 
 /* ============================================================
    ANIMACIÓN — estado inicial (solo si hay JS)
@@ -280,9 +283,11 @@ section{position:relative;}
 @media (max-width:720px){
   .nav-links{position:fixed;inset:0 0 0 auto;width:min(80vw,320px);background:var(--crema);
     flex-direction:column;align-items:flex-start;justify-content:center;gap:28px;padding:0 40px;
-    transform:translateX(100%);transition:transform .45s cubic-bezier(.22,1,.36,1);
+    transform:translateX(100%);visibility:hidden;
+    transition:transform .45s cubic-bezier(.22,1,.36,1),visibility 0s linear .45s;
     box-shadow:-20px 0 60px -20px rgba(72,55,32,.4);}
-  .nav-links.open{transform:translateX(0);}
+  .nav-links.open{transform:translateX(0);visibility:visible;
+    transition:transform .45s cubic-bezier(.22,1,.36,1),visibility 0s;}
   .nav-links a.lk{font-size:22px;font-family:var(--font-title);}
   .nav-links .btn{margin-top:8px;}
   .nav-toggle{display:flex;}
@@ -291,7 +296,8 @@ section{position:relative;}
 @media (prefers-reduced-motion:reduce){
   *{animation:none !important;scroll-behavior:auto !important;}
   .js [data-reveal],.js [data-stagger]>*{opacity:1 !important;transform:none !important;}
-  .js [data-reveal-line]>span{opacity:1 !important;transform:none !important;}
+  .js [data-reveal-line] .ln>span{opacity:1 !important;transform:none !important;}
+  .js .manifesto .big .word{opacity:1 !important;}
 }
 
 /* ============================================================
@@ -320,8 +326,11 @@ section{position:relative;}
 .es-item{display:flex;flex-direction:column;gap:4px;}
 .es-k{font-size:11px;letter-spacing:.2em;text-transform:uppercase;font-weight:600;color:var(--ocre-ink);}
 .es-v{font-family:var(--font-title);font-size:22px;color:var(--marron);}
-.es-v.muted{font-family:var(--font-body);font-size:14px;font-weight:500;color:var(--gris);
+.es-v.muted{font-family:var(--font-body);font-size:14px;font-weight:500;color:var(--tinta-soft);
   font-style:italic;letter-spacing:0;}
+.es-v.cta{font-family:var(--font-body);font-size:15px;font-weight:600;color:var(--olivo);letter-spacing:0;}
+.testimonios-intro{max-width:620px;font-size:clamp(16px,1.8vw,19px);color:var(--tinta-soft);
+  line-height:1.6;margin-bottom:28px;}
 .es-note{margin-top:22px;font-size:15px;color:var(--tinta-soft);max-width:52ch;}
 
 /* ---- TESTIMONIOS ---- */
@@ -380,5 +389,6 @@ section{position:relative;}
 }
 @media (max-width:720px){
   .mobile-cta{display:block;}
+  .footer{padding-bottom:96px;}
   .esencial{gap:18px 32px;}
 }

@@ -55,10 +55,15 @@
     });
   });
 
-  /* ---------- CTA fijo móvil: aparece al salir del hero ---------- */
+  /* ---------- CTA fijo móvil: aparece al salir del hero, se oculta en el contacto ---------- */
   var mcta = document.querySelector('.mobile-cta');
   if (mcta) {
-    var mShow = function () { mcta.classList.toggle('show', window.scrollY > 640); };
+    var contacto = document.querySelector('#contacto');
+    var atBottom = false;
+    var mShow = function () { mcta.classList.toggle('show', window.scrollY > 640 && !atBottom); };
+    if (contacto && 'IntersectionObserver' in window) {
+      new IntersectionObserver(function (es) { atBottom = es[0].isIntersecting; mShow(); }, { threshold: 0 }).observe(contacto);
+    }
     window.addEventListener('scroll', mShow, { passive: true });
     mShow();
   }
@@ -72,6 +77,8 @@
 
   /* Sin GSAP (CDN caído) o con reduce-motion: mostramos todo y salimos. */
   if (reduce || !hasGSAP) { showAll(); return; }
+
+  try {
 
   var gsap = window.gsap;
   if (window.ScrollTrigger) gsap.registerPlugin(window.ScrollTrigger);
@@ -160,4 +167,5 @@
     }
   }
 
+  } catch (e) { showAll(); }
 })();
