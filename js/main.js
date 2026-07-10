@@ -40,10 +40,33 @@
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
 
+  /* ---------- tracking de los CTA (funciona aunque aún no haya IDs) ---------- */
+  document.querySelectorAll('[data-cta]').forEach(function (a) {
+    a.addEventListener('click', function () {
+      if (window.epTrack) window.epTrack('contact_click', { channel: 'instagram_dm', ubicacion: a.getAttribute('data-cta') });
+    });
+  });
+
+  /* ---------- FAQ: abrir de a una ---------- */
+  var faqItems = document.querySelectorAll('.faq-item');
+  faqItems.forEach(function (item) {
+    item.addEventListener('toggle', function () {
+      if (item.open) faqItems.forEach(function (o) { if (o !== item) o.open = false; });
+    });
+  });
+
+  /* ---------- CTA fijo móvil: aparece al salir del hero ---------- */
+  var mcta = document.querySelector('.mobile-cta');
+  if (mcta) {
+    var mShow = function () { mcta.classList.toggle('show', window.scrollY > 640); };
+    window.addEventListener('scroll', mShow, { passive: true });
+    mShow();
+  }
+
   /* revela TODO sin depender de GSAP ni de requestAnimationFrame
      (failsafe duro: si algo falla, el contenido nunca queda invisible) */
   function showAll() {
-    document.querySelectorAll('[data-reveal],[data-reveal-line] .ln>span,[data-stagger]>*')
+    document.querySelectorAll('[data-reveal],[data-reveal-line] .ln>span,[data-stagger]>*,.manifesto .big .word')
       .forEach(function (el) { el.style.opacity = '1'; el.style.transform = 'none'; });
   }
 
@@ -123,5 +146,18 @@
       scrollTrigger: { trigger: el, start: 'top bottom', end: 'bottom top', scrub: true }
     });
   });
+
+  /* ---------- signature: manifiesto que se ilumina palabra por palabra ---------- */
+  var mani = document.querySelector('.manifesto .big[data-words]');
+  if (mani) {
+    var words = mani.querySelectorAll('.word');
+    if (words.length) {
+      mani.classList.add('words-on');
+      gsap.to(words, {
+        opacity: 1, ease: 'none', stagger: 0.4,
+        scrollTrigger: { trigger: mani, start: 'top 80%', end: 'bottom 55%', scrub: true }
+      });
+    }
+  }
 
 })();

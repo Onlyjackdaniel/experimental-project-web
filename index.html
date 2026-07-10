@@ -5,13 +5,45 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>The Experimental Project — Experiencias holísticas en Cancún</title>
 <meta name="description" content="Experiencias holísticas por episodios en Casa Ixum, Cancún. Un espacio para bajar el ruido, encontrar claridad y volver a ti.">
-<meta property="og:title" content="The Experimental Project — Experiencias holísticas en Cancún">
-<meta property="og:description" content="Experiencias holísticas por episodios en Casa Ixum, Cancún. No vienes por lo que hacemos, vienes por cómo quieres sentirte al salir.">
+<link rel="canonical" href="https://onlyjackdaniel.github.io/experimental-project-web/">
+<meta name="theme-color" content="#483720">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="favicon.svg">
+
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="The Experimental Project">
+<meta property="og:title" content="Un espacio para volver a ti.">
+<meta property="og:description" content="Experiencias holísticas por episodios en Casa Ixum, Cancún. No vienes por lo que hacemos, vienes por cómo quieres sentirte al salir.">
+<meta property="og:url" content="https://onlyjackdaniel.github.io/experimental-project-web/">
+<meta property="og:image" content="https://onlyjackdaniel.github.io/experimental-project-web/assets/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Un espacio para volver a ti.">
+<meta name="twitter:description" content="Experiencias holísticas por episodios en Casa Ixum, Cancún.">
+<meta name="twitter:image" content="https://onlyjackdaniel.github.io/experimental-project-web/assets/og.png">
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context":"https://schema.org",
+  "@type":"Organization",
+  "name":"The Experimental Project",
+  "description":"Experiencias holísticas por episodios en Casa Ixum, Cancún.",
+  "url":"https://onlyjackdaniel.github.io/experimental-project-web/",
+  "image":"https://onlyjackdaniel.github.io/experimental-project-web/assets/og.png",
+  "sameAs":["https://instagram.com/experimentalxproject"],
+  "areaServed":{"@type":"City","name":"Cancún, Quintana Roo, México"},
+  "slogan":"Body · Mind · Soul"
+}
+</script>
+
+<script src="js/tracking.js"></script>
 </head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
@@ -23,13 +55,13 @@
       experimental
       <small>body · mind · soul</small>
     </a>
-    <nav class="nav-links" aria-label="Principal">
+    <nav class="nav-links" aria-label="Principal" id="menu">
       <a class="lk" href="#experiencias">Experiencias</a>
-      <a class="lk" href="#episodios">Episodios</a>
+      <a class="lk" href="#vivir">Qué vivirás</a>
       <a class="lk" href="#conocenos">Conócenos</a>
-      <a class="lk" href="#contacto">Contacto</a>
-      <a class="btn btn-solid" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">
-        Reserva tu lugar <span class="ar" aria-hidden="true">→</span>
+      <a class="lk" href="#faq">Preguntas</a>
+      <a class="btn btn-solid" data-cta="nav" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">
+        Escríbenos <span class="ar" aria-hidden="true">→</span>
       </a>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
@@ -59,17 +91,22 @@
       </h1>
       <p class="lead" data-reveal>No vienes por lo que hacemos. Vienes por cómo quieres sentirte al salir: en paz, con claridad, suficiente.</p>
       <div class="hero-cta" data-reveal>
-        <a class="btn btn-solid" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Reserva tu lugar <span class="ar" aria-hidden="true">→</span></a>
+        <a class="btn btn-solid" data-cta="hero" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Escríbenos por Instagram <span class="ar" aria-hidden="true">→</span></a>
         <a class="btn btn-ghost" href="#experiencias">Conoce las experiencias</a>
       </div>
     </div>
     <div class="scroll-cue" aria-hidden="true"><span>scroll</span><span class="line"></span></div>
   </section>
 
-  <!-- ============ MANIFIESTO ============ -->
+  <!-- ============ MANIFIESTO (signature: reveal palabra por palabra) ============ -->
   <section class="manifesto section-pad" id="experiencias">
     <div class="wrap">
-      <p class="big" data-reveal>No es un evento. Es el momento en que algo dentro de ti por fin <span class="accent">respira</span>.</p>
+      <p class="big" data-words>
+        <span class="word">No</span> <span class="word">es</span> <span class="word">un</span> <span class="word">evento.</span>
+        <span class="word">Es</span> <span class="word">el</span> <span class="word">momento</span> <span class="word">en</span> <span class="word">que</span>
+        <span class="word">algo</span> <span class="word">dentro</span> <span class="word">de</span> <span class="word">ti</span>
+        <span class="word">por</span> <span class="word">fin</span> <span class="word accent">respira</span><span class="word">.</span>
+      </p>
       <p class="sub" data-reveal>Creamos experiencias para soltar el ruido del día a día y reencontrarte contigo. Cada una es un capítulo distinto, pensado para que salgas sintiéndote diferente a como llegaste.</p>
     </div>
   </section>
@@ -90,8 +127,8 @@
         </article>
         <article class="step">
           <div class="num">02</div>
-          <h3>Reserva tu lugar</h3>
-          <p>Nos escribes por Instagram. Son pocos lugares y, una vez que pasa, no se repite.</p>
+          <h3>Aparta tu lugar</h3>
+          <p>Nos escribes por Instagram, te compartimos los detalles y apartas tu lugar. Son pocos y no se repiten.</p>
         </article>
         <article class="step">
           <div class="num">03</div>
@@ -130,6 +167,41 @@
     </div>
   </section>
 
+  <!-- ============ QUÉ VIVIRÁS ============ -->
+  <section class="vivir section-pad" id="vivir">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-reveal>Cómo se siente</p>
+        <h2 data-reveal>Lo que vivirás</h2>
+        <p data-reveal>No te contamos cada actividad de antemano, porque parte de la experiencia es descubrirla. Pero el camino siempre tiene la misma forma.</p>
+      </div>
+      <div class="arco" data-stagger>
+        <div class="fase">
+          <span class="fase-n">01</span>
+          <h3>Llegas</h3>
+          <p>Dejas el mundo afuera. Te reciben un espacio tranquilo y personas que cuidan cada detalle para que solo tengas que estar.</p>
+        </div>
+        <div class="fase">
+          <span class="fase-n">02</span>
+          <h3>Te encuentras</h3>
+          <p>En el corazón del episodio pasa algo distinto cada vez. Te permites sentir, soltar y estar presente contigo.</p>
+        </div>
+        <div class="fase">
+          <span class="fase-n">03</span>
+          <h3>Vuelves distinto</h3>
+          <p>Sales más ligero, más claro, más tú. No por lo que hiciste, sino por cómo te sentiste.</p>
+        </div>
+      </div>
+      <div class="esencial" data-reveal aria-label="Datos del próximo episodio, por confirmar">
+        <div class="es-item"><span class="es-k">Dónde</span><span class="es-v">Casa Ixum, Cancún</span></div>
+        <div class="es-item"><span class="es-k">Cupo</span><span class="es-v">Limitado</span></div>
+        <div class="es-item"><span class="es-k">Duración</span><span class="es-v muted">Por confirmar</span></div>
+        <div class="es-item"><span class="es-k">Incluye</span><span class="es-v muted">Por confirmar</span></div>
+      </div>
+      <p class="es-note" data-reveal>Escríbenos y te compartimos la duración, la inversión y todo lo que incluye el próximo episodio.</p>
+    </div>
+  </section>
+
   <!-- ============ CASA IXUM ============ -->
   <section class="casa section-pad">
     <div class="wrap">
@@ -162,6 +234,30 @@
     </div>
   </section>
 
+  <!-- ============ TESTIMONIOS ============ -->
+  <section class="testimonios section-pad">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-reveal>Lo que se llevan</p>
+        <h2 data-reveal>Historias de quienes ya vinieron</h2>
+      </div>
+      <div class="quotes" data-stagger>
+        <figure class="quote-card is-placeholder">
+          <blockquote>“Testimonio real de un asistente de un episodio anterior.”</blockquote>
+          <figcaption><span class="who">Nombre</span><span class="tag">Testimonio pendiente</span></figcaption>
+        </figure>
+        <figure class="quote-card is-placeholder">
+          <blockquote>“Testimonio real de un asistente de un episodio anterior.”</blockquote>
+          <figcaption><span class="who">Nombre</span><span class="tag">Testimonio pendiente</span></figcaption>
+        </figure>
+        <figure class="quote-card is-placeholder">
+          <blockquote>“Testimonio real de un asistente de un episodio anterior.”</blockquote>
+          <figcaption><span class="who">Nombre</span><span class="tag">Testimonio pendiente</span></figcaption>
+        </figure>
+      </div>
+    </div>
+  </section>
+
   <!-- ============ PRÓXIMO EPISODIO ============ -->
   <section class="proximo section-pad">
     <div class="wrap">
@@ -176,7 +272,7 @@
             <div class="m"><div class="k">Fecha</div><div class="v">Próximamente</div></div>
           </div>
           <div class="cta" data-reveal>
-            <a class="btn btn-light" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Quiero enterarme <span class="ar" aria-hidden="true">→</span></a>
+            <a class="btn btn-light" data-cta="proximo" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Quiero enterarme <span class="ar" aria-hidden="true">→</span></a>
           </div>
         </div>
         <div class="media" data-reveal>
@@ -188,6 +284,42 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FAQ ============ -->
+  <section class="faq section-pad" id="faq">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-reveal>Antes de escribirnos</p>
+        <h2 data-reveal>Preguntas frecuentes</h2>
+      </div>
+      <div class="faq-list" data-stagger>
+        <details class="faq-item">
+          <summary>¿Qué es exactamente un episodio?<span class="chev" aria-hidden="true"></span></summary>
+          <div class="faq-body"><p>Un encuentro único, presencial y de cupo limitado en Casa Ixum. Cada episodio tiene su propio tema e intención, y no se repite. Más que un evento, es un espacio para reconectar contigo.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>¿Necesito experiencia previa o preparación?<span class="chev" aria-hidden="true"></span></summary>
+          <div class="faq-body"><p>Para nada. Solo necesitas venir con apertura y ganas de estar presente. Nosotros nos encargamos del resto.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>¿Puedo ir sola o solo?<span class="chev" aria-hidden="true"></span></summary>
+          <div class="faq-body"><p>Claro. La mayoría llega así. Es un espacio seguro y cálido, pensado para que te sientas acompañado desde que llegas.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cómo aparto mi lugar?<span class="chev" aria-hidden="true"></span></summary>
+          <div class="faq-body"><p>Nos escribes por Instagram, te compartimos los detalles del próximo episodio y apartas tu lugar. Como son pocos, se confirman por orden de llegada.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>¿Dónde es y cómo llego?<span class="chev" aria-hidden="true"></span></summary>
+          <div class="faq-body"><p>En Casa Ixum, Cancún. Al reservar te compartimos la ubicación exacta y todo lo que necesitas saber para llegar.</p></div>
+        </details>
+        <details class="faq-item">
+          <summary>¿Cuánto dura y qué incluye?<span class="chev" aria-hidden="true"></span></summary>
+          <div class="faq-body"><p>Cada episodio es distinto. Escríbenos y te compartimos la duración, la inversión y todo lo que incluye el próximo.</p></div>
+        </details>
       </div>
     </div>
   </section>
@@ -235,7 +367,7 @@
       </h2>
       <p data-reveal>Escríbenos por Instagram. El resto lo descubres aquí.</p>
       <div class="cta" data-reveal>
-        <a class="btn btn-light" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Reserva tu lugar <span class="ar" aria-hidden="true">→</span></a>
+        <a class="btn btn-light" data-cta="cierre" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Escríbenos por Instagram <span class="ar" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -251,9 +383,9 @@
         <div class="fcol">
           <h4>Navegación</h4>
           <a href="#experiencias">Experiencias</a>
-          <a href="#episodios">Episodios</a>
+          <a href="#vivir">Qué vivirás</a>
           <a href="#conocenos">Conócenos</a>
-          <a href="#contacto">Contacto</a>
+          <a href="#faq">Preguntas</a>
         </div>
         <div class="fcol">
           <h4>Síguenos</h4>
@@ -261,8 +393,8 @@
         </div>
         <div class="fcol">
           <h4>Reserva</h4>
-          <a href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Escríbenos por DM</a>
-          <a href="#">Casa Ixum, Cancún</a>
+          <a data-cta="footer" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Escríbenos por DM</a>
+          <a href="#faq">Preguntas frecuentes</a>
         </div>
       </div>
     </div>
@@ -272,6 +404,9 @@
     </div>
   </div>
 </footer>
+
+<!-- CTA fijo (solo móvil) -->
+<a class="mobile-cta" data-cta="sticky" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener" aria-label="Escríbenos por Instagram">Escríbenos por Instagram</a>
 
 <!-- ============ LIBRERÍAS + SCRIPT ============ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
