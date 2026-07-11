@@ -1,0 +1,12 @@
+Deja aquí las FOTOS ORIGINALES (sin comprimir, la mejor resolución que tengas).
+Yo las optimizo (redimensiono + WebP) y las conecto al sitio. NO necesitas comprimirlas.
+
+Nómbralas como sea, o mejor así para que las coloque directo:
+  hero.jpg          -> foto principal a pantalla completa (Casa Ixum / experiencia)
+  gigi.jpg          -> retrato de Gigi
+  pablo.jpg         -> retrato de Pablo
+  casa-ixum-1.jpg   -> el espacio (exterior o rincón que transmita calma)
+  casa-ixum-2.jpg   -> detalle del espacio
+  proximo.jpg       -> arte o foto del próximo episodio (cuando exista)
+
+Formatos: JPG o PNG. Horizontales para hero/espacio, verticales para retratos.
