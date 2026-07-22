@@ -9,6 +9,7 @@
 <link rel="canonical" href="https://onlyjackdaniel.github.io/experimental-project-web/">
 <meta name="theme-color" content="#483720">
 <link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/brand/favicon-32.png" sizes="32x32" type="image/png">
 <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
 
 <meta property="og:type" content="website">
@@ -30,6 +31,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/styles.css">
+<link rel="stylesheet" href="css/pages.css?v=2">
 
 <script type="application/ld+json">
 {
@@ -67,17 +69,24 @@
 <!-- ============ NAV ============ -->
 <header class="nav" id="top">
   <div class="wrap">
-    <a class="brand" href="#top" aria-label="Experimental Project, inicio">
-      experimental
-      <small>body · mind · soul</small>
+    <a class="brand" href="index.html" aria-label="The Experimental Project, inicio">
+      <img class="brand-logo" src="assets/img/brand/logo-dark.png" alt="The Experimental Project" width="900" height="453">
     </a>
     <nav class="nav-links" aria-label="Principal" id="menu">
-      <a class="lk" href="#experiencias">Experiencias</a>
-      <a class="lk" href="#vivir">Qué vivirás</a>
-      <a class="lk" href="#conocenos">Conócenos</a>
-      <a class="lk" href="#faq">Preguntas</a>
+      <a class="lk is-active" href="index.html">Inicio</a>
+      <div class="lk-drop">
+        <button class="lk-toggle" aria-expanded="false" aria-haspopup="true">Episodios <span class="caret" aria-hidden="true"></span></button>
+        <div class="drop-menu" role="menu">
+          <a href="episodio-1.html" role="menuitem">Episodio 1<span class="d-sub">Sonido, cacao y presencia</span></a>
+          <a href="episodio-2.html" role="menuitem">Episodio 2 · Lenguaje astral <span class="soon">Pronto</span></a>
+          <div class="drop-sep"></div>
+          <a href="episodios.html" role="menuitem">Ver todos los episodios</a>
+        </div>
+      </div>
+      <a class="lk" href="conocenos.html">Conócenos</a>
+      <a class="lk" href="contacto.html">Contacto</a>
       <a class="btn btn-solid" data-cta="nav" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">
-        Escríbenos por Instagram <span class="ar" aria-hidden="true">→</span>
+        Escríbenos <span class="ar" aria-hidden="true">→</span>
       </a>
     </nav>
     <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
@@ -91,13 +100,7 @@
   <!-- ============ HERO ============ -->
   <section class="hero" aria-label="Inicio">
     <div class="hero-bg" data-parallax>
-      <div class="ph" aria-hidden="true">
-        <div class="ph-inner">
-          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-          <span class="ph-t">Imagen hero</span>
-          <span class="ph-d">Foto a pantalla completa: ambiente de Casa Ixum / una experiencia en curso.</span>
-        </div>
-      </div>
+      <img class="hero-img" src="assets/img/home/hero.webp" alt="Ambiente de una experiencia en Casa Ixum, Cancún" fetchpriority="high">
     </div>
     <div class="wrap">
       <p class="eyebrow" data-reveal>Experiencias holísticas · Cancún</p>
@@ -108,13 +111,13 @@
       <p class="lead" data-reveal>No vienes por lo que hacemos. Vienes por cómo quieres sentirte al salir: en paz, con claridad, suficiente.</p>
       <div class="hero-cta" data-reveal>
         <a class="btn btn-solid" data-cta="hero" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Escríbenos por Instagram <span class="ar" aria-hidden="true">→</span></a>
-        <a class="btn btn-ghost" href="#experiencias">Conoce las experiencias</a>
+        <a class="btn btn-ghost" href="episodios.html">Conoce los episodios</a>
       </div>
     </div>
     <div class="scroll-cue" aria-hidden="true"><span>scroll</span><span class="line"></span></div>
   </section>
 
-  <!-- ============ MANIFIESTO (signature: reveal palabra por palabra) ============ -->
+  <!-- ============ MANIFIESTO ============ -->
   <section class="manifesto section-pad" id="experiencias">
     <div class="wrap">
       <p class="big" data-words>
@@ -151,6 +154,9 @@
           <h3>Reencuéntrate</h3>
           <p>Un espacio en Casa Ixum para soltar, sentir y volver a casa distinto.</p>
         </article>
+      </div>
+      <div style="margin-top:44px" data-reveal>
+        <a class="btn btn-ghost" href="episodios.html">Ver todos los episodios <span class="ar" aria-hidden="true">→</span></a>
       </div>
     </div>
   </section>
@@ -229,27 +235,23 @@
             <svg viewBox="0 0 24 24" width="17" height="17" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><path d="M12 21s-7-6-7-11a7 7 0 0114 0c0 5-7 11-7 11z"/><circle cx="12" cy="10" r="2.4"/></svg>
             Cancún, Quintana Roo
           </span>
-        </div>
-        <div class="media">
-          <div class="ph ratio-4x5" aria-hidden="true">
-            <div class="ph-inner">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-              <span class="ph-t">Casa Ixum</span>
-              <span class="ph-d">Foto del espacio: exterior o rincón que transmita calma.</span>
-            </div>
+          <div style="margin-top:24px" data-reveal>
+            <a class="btn btn-ghost" href="conocenos.html">Conócenos <span class="ar" aria-hidden="true">→</span></a>
           </div>
-          <div class="ph small ratio-1x1" aria-hidden="true">
-            <div class="ph-inner">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-              <span class="ph-t">Detalle</span>
-            </div>
+        </div>
+        <div class="media" data-reveal>
+          <div class="imgbox ratio-4x5 hoverable">
+            <img src="assets/img/home/casa-1.webp" alt="Espacio de Casa Ixum, Cancún" loading="lazy">
+          </div>
+          <div class="imgbox small ratio-1x1 hoverable">
+            <img src="assets/img/home/casa-2.webp" alt="Detalle del espacio de Casa Ixum" loading="lazy">
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============ CONÓCENOS ============ -->
+  <!-- ============ CONÓCENOS (teaser) ============ -->
   <section class="conocenos section-pad" id="conocenos">
     <div class="wrap">
       <div class="sec-head">
@@ -258,68 +260,50 @@
       </div>
       <div class="hosts" data-stagger>
         <article class="host">
-          <div class="ph ratio-4x5" aria-hidden="true">
-            <div class="ph-inner">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
-              <span class="ph-t">Retrato</span>
-            </div>
+          <div class="imgbox ratio-4x5 hoverable">
+            <img src="assets/img/hosts/gigi.webp" alt="Gigi, anfitriona de Experimental Project" loading="lazy">
           </div>
           <h3>Gigi</h3>
           <p class="role">Anfitriona</p>
           <p>Cuida cada experiencia desde la intención y el detalle, para que todo esté listo y tú solo tengas que llegar.</p>
         </article>
         <article class="host">
-          <div class="ph ratio-4x5" aria-hidden="true">
-            <div class="ph-inner">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-6 8-6s8 2 8 6"/></svg>
-              <span class="ph-t">Retrato</span>
-            </div>
+          <div class="imgbox ratio-4x5 hoverable">
+            <img src="assets/img/hosts/pablo.webp" alt="Pablo, anfitrión de Experimental Project" loading="lazy">
           </div>
           <h3>Pablo</h3>
           <p class="role">Anfitrión</p>
           <p>Acompaña el ambiente y la experiencia para que cada encuentro se sienta seguro, cálido y presente.</p>
         </article>
       </div>
-    </div>
-  </section>
-
-  <!-- ============ TESTIMONIOS / INTENCIÓN ============ -->
-  <section class="testimonios section-pad">
-    <div class="wrap">
-      <div class="sec-head">
-        <p class="eyebrow" data-reveal>Lo que se llevan</p>
-        <h2 data-reveal>Pronto, las primeras historias</h2>
+      <div style="margin-top:40px" data-reveal>
+        <a class="btn btn-ghost" href="conocenos.html">Conoce más sobre nosotros <span class="ar" aria-hidden="true">→</span></a>
       </div>
-      <p class="testimonios-intro" data-reveal>Aquí vamos a compartir lo que se lleva quien vive un episodio: la calma, la claridad, la sensación de volver a sentirse suficiente. Si quieres ser de las primeras personas en contarlo, escríbenos por Instagram.</p>
-      <a class="btn btn-solid" data-cta="testimonios" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener" data-reveal>Escríbenos por Instagram <span class="ar" aria-hidden="true">→</span></a>
     </div>
   </section>
 
-  <!-- ============ PRÓXIMO EPISODIO ============ -->
+  <!-- ============ PRÓXIMO EPISODIO (Ep2 astral) ============ -->
   <section class="proximo section-pad">
     <div class="wrap">
       <div class="inner">
         <div class="copy">
           <p class="eyebrow" data-reveal>Lo que viene</p>
-          <h2 data-reveal>El próximo episodio está por abrirse</h2>
-          <p data-reveal>Estamos afinando los últimos detalles. Los lugares son pocos y no se repiten: escríbenos y eres de los primeros en enterarte cuando abramos reservas.</p>
+          <h2 data-reveal>Episodio 2: Lenguaje astral</h2>
+          <p data-reveal>Estamos afinando los últimos detalles del próximo capítulo. Los lugares son pocos y no se repiten: escríbenos y eres de los primeros en enterarte cuando abramos reservas.</p>
           <div class="meta" data-stagger>
             <div class="m"><div class="k">Lugar</div><div class="v">Casa Ixum</div></div>
             <div class="m"><div class="k">Cupo</div><div class="v">Limitado</div></div>
             <div class="m"><div class="k">Fecha</div><div class="v">Próximamente</div></div>
           </div>
           <div class="cta" data-reveal>
-            <a class="btn btn-light" data-cta="proximo" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Avísame por Instagram <span class="ar" aria-hidden="true">→</span></a>
+            <a class="btn btn-light" href="episodio-2.html">Ver el próximo episodio <span class="ar" aria-hidden="true">→</span></a>
           </div>
         </div>
         <div class="media" data-reveal>
-          <div class="ph ratio-3x4" aria-hidden="true">
-            <div class="ph-inner">
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><path d="M21 15l-5-5L5 21"/></svg>
-              <span class="ph-t">Próximo episodio</span>
-              <span class="ph-d">Arte o foto del episodio cuando se confirme.</span>
-            </div>
-          </div>
+          <a href="episodio-2.html" class="astral-mini" aria-label="Episodio 2, Lenguaje astral">
+            <span class="am-stars" aria-hidden="true"></span>
+            <img src="assets/img/brand/emblem-light.png" alt="Emblema de Experimental Project">
+          </a>
         </div>
       </div>
     </div>
@@ -371,6 +355,7 @@
       <p data-reveal>Escríbenos por Instagram. El resto lo descubres aquí.</p>
       <div class="cta" data-reveal>
         <a class="btn btn-light" data-cta="cierre" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Escríbenos por Instagram <span class="ar" aria-hidden="true">→</span></a>
+        <a class="btn btn-ghost" href="contacto.html" style="border-color:rgba(251,249,244,.5);color:var(--blanco)">Ir a contacto</a>
       </div>
     </div>
   </section>
@@ -381,28 +366,29 @@
 <footer class="footer">
   <div class="wrap">
     <div class="top">
-      <a class="brand" href="#top">experimental<small>body · mind · soul</small></a>
+      <a class="brand" href="index.html"><img class="brand-logo" src="assets/img/brand/logo-light.png" alt="The Experimental Project" width="900" height="435"></a>
       <div class="cols">
         <div class="fcol">
-          <h3>Navegación</h3>
-          <a href="#experiencias">Experiencias</a>
-          <a href="#vivir">Qué vivirás</a>
-          <a href="#conocenos">Conócenos</a>
-          <a href="#faq">Preguntas</a>
+          <h3>Explora</h3>
+          <a href="index.html">Inicio</a>
+          <a href="episodios.html">Episodios</a>
+          <a href="conocenos.html">Conócenos</a>
+          <a href="contacto.html">Contacto</a>
+        </div>
+        <div class="fcol">
+          <h3>Episodios</h3>
+          <a href="episodio-1.html">Episodio 1</a>
+          <a href="episodio-2.html">Episodio 2 · Lenguaje astral</a>
         </div>
         <div class="fcol">
           <h3>Síguenos</h3>
           <a href="https://instagram.com/experimentalxproject" target="_blank" rel="noopener">Instagram</a>
-        </div>
-        <div class="fcol">
-          <h3>Reserva</h3>
-          <a data-cta="footer" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Escríbenos por Instagram</a>
-          <a href="#faq">Preguntas frecuentes</a>
+          <a data-cta="footer" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener">Escríbenos por DM</a>
         </div>
       </div>
     </div>
     <div class="bottom">
-      <span>© <span data-year>2026</span> The Experimental Project. Todos los derechos reservados.</span>
+      <span>© <span data-year>2026</span> The Experimental Project · Body · Mind · Soul</span>
       <span>Casa Ixum · Cancún, Quintana Roo</span>
     </div>
   </div>
@@ -411,7 +397,6 @@
 <!-- CTA fijo (solo móvil) -->
 <a class="mobile-cta" data-cta="sticky" href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener" aria-label="Escríbenos por Instagram">Escríbenos por Instagram</a>
 
-<!-- failsafe inline: revela el contenido aunque main.js falle o no cargue -->
 <script>
   setTimeout(function(){
     document.querySelectorAll('[data-reveal],[data-stagger]>*,[data-reveal-line] .ln>span,.manifesto .big .word')
@@ -419,10 +404,9 @@
   }, 4000);
 </script>
 
-<!-- ============ LIBRERÍAS + SCRIPT ============ -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=3"></script>
 </body>
 </html>

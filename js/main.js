@@ -36,6 +36,75 @@
     });
   }
 
+  /* ---------- NAV: dropdown Episodios ---------- */
+  document.querySelectorAll('.lk-drop').forEach(function (drop) {
+    var btn = drop.querySelector('.lk-toggle');
+    if (!btn) return;
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      var open = drop.classList.toggle('open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+    });
+    // cerrar al hacer click fuera (solo escritorio, donde es hover/click)
+    document.addEventListener('click', function (e) {
+      if (!drop.contains(e.target)) { drop.classList.remove('open'); btn.setAttribute('aria-expanded', 'false'); }
+    });
+  });
+
+  /* ---------- GALERÍA: filmstrip + lightbox ---------- */
+  var strip = document.querySelector('.filmstrip');
+  if (strip) {
+    var prev = document.querySelector('[data-gal="prev"]');
+    var next = document.querySelector('[data-gal="next"]');
+    var step = function () { return Math.min(strip.clientWidth * 0.8, 520); };
+    if (prev) prev.addEventListener('click', function () { strip.scrollBy({ left: -step(), behavior: 'smooth' }); });
+    if (next) next.addEventListener('click', function () { strip.scrollBy({ left: step(), behavior: 'smooth' }); });
+
+    var imgs = [].slice.call(strip.querySelectorAll('img'));
+    var lb = document.querySelector('.lightbox');
+    if (lb && imgs.length) {
+      var lbImg = lb.querySelector('img');
+      var lbCount = lb.querySelector('.lb-count');
+      var idx = 0;
+      var open = function (i) {
+        idx = (i + imgs.length) % imgs.length;
+        lbImg.src = imgs[idx].currentSrc || imgs[idx].src;
+        lbImg.alt = imgs[idx].alt || '';
+        if (lbCount) lbCount.textContent = (idx + 1) + ' / ' + imgs.length;
+        lb.classList.add('open');
+        document.body.classList.add('menu-open');
+      };
+      var close = function () { lb.classList.remove('open'); document.body.classList.remove('menu-open'); };
+      imgs.forEach(function (im, i) { im.addEventListener('click', function () { open(i); }); });
+      lb.querySelector('.lb-close').addEventListener('click', close);
+      lb.querySelector('.lb-next').addEventListener('click', function (e) { e.stopPropagation(); open(idx + 1); });
+      lb.querySelector('.lb-prev').addEventListener('click', function (e) { e.stopPropagation(); open(idx - 1); });
+      lb.addEventListener('click', function (e) { if (e.target === lb) close(); });
+      document.addEventListener('keydown', function (e) {
+        if (!lb.classList.contains('open')) return;
+        if (e.key === 'Escape') close();
+        else if (e.key === 'ArrowRight') open(idx + 1);
+        else if (e.key === 'ArrowLeft') open(idx - 1);
+      });
+    }
+  }
+
+  /* ---------- CONTACTO: formulario (aún sin backend) ---------- */
+  var cform = document.querySelector('.form-card');
+  if (cform) {
+    cform.addEventListener('submit', function (e) {
+      e.preventDefault();
+      var status = cform.querySelector('.form-status');
+      if (status) {
+        status.innerHTML = '¡Gracias! Por ahora el envío directo aún no está conectado. ' +
+          'Escríbenos por <a href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener" style="color:var(--ocre-ink);font-weight:600">Instagram</a> ' +
+          'y te respondemos al momento.';
+        status.classList.add('show');
+      }
+      if (window.epTrack) window.epTrack('contact_form_attempt', { channel: 'form' });
+    });
+  }
+
   /* ---------- año footer ---------- */
   var y = document.querySelector('[data-year]');
   if (y) y.textContent = new Date().getFullYear();
@@ -110,7 +179,7 @@
   document.querySelectorAll('[data-reveal-line]').forEach(function (el) {
     var spans = el.querySelectorAll('.ln > span');
     if (!spans.length) return;
-    var v = { yPercent: 0, opacity: 1, duration: 1.1, ease: 'expo.out', stagger: 0.09 };
+    var v = { y: 0, yPercent: 0, opacity: 1, duration: 1.1, ease: 'expo.out', stagger: 0.09 };
     if (aboveFold(el)) { v.delay = 0.15; gsap.to(spans, v); }
     else { v.scrollTrigger = { trigger: el, start: 'top 88%' }; gsap.to(spans, v); }
   });
