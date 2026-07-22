@@ -367,3 +367,81 @@
 .hero .btn-ghost:hover{border-color:var(--blanco);background:rgba(255,255,255,.08);}
 .hero .scroll-cue{color:var(--arena);}
 .hero .scroll-cue .line{background:var(--arena);}
+
+/* ============================================================
+   REFINAMIENTOS v3 (feedback Jack 21 jul, 2ª ronda)
+   - Cursiva: fuente CON acentos (Dancing Script), más cuerpo y tamaño.
+     Coffekan no tenía glifos acentuados (á/é/í/ó/ñ se rompían).
+   - Barra del nav visible en el home.
+   - Movimiento en tarjetas (menos rígido).
+   - Rol de anfitriones legible (ya no diminuto).
+   ============================================================ */
+:root{ --font-script:'Dancing Script', var(--font-accent), cursive; }
+
+/* ---- Cursiva accent: legible + acentos correctos ---- */
+.accent{
+  font-family:var(--font-script);
+  font-weight:700;
+  -webkit-text-stroke:0;
+  text-stroke:0;
+  font-size:1.16em;
+  letter-spacing:.005em;
+}
+.manifesto .big .accent{color:var(--ocre);font-size:1.08em;}
+.hero h1 .accent{font-size:1.0em;color:#F2DFA8;-webkit-text-stroke:0;}
+.cierre .accent{font-size:1.0em;}
+
+/* frases cursivas del bloque oscuro (estados) — ahora legibles y sin roto */
+.estado .desc .quote{
+  font-family:var(--font-script);
+  font-weight:600;
+  -webkit-text-stroke:0;
+  text-stroke:0;
+  color:#EAD6A0;
+  font-size:clamp(20px,2.1vw,24px);
+  letter-spacing:.005em;
+  opacity:1;
+}
+/* script del Ep2 astral */
+.astral h1 .a-script{font-family:var(--font-script);font-weight:700;}
+
+/* ---- Barra del nav visible en el home (no se pierde arriba) ---- */
+.nav.nav--bar{
+  background:rgba(246,241,232,.92);
+  backdrop-filter:blur(10px);
+  box-shadow:0 1px 0 var(--linea);
+}
+
+/* ---- Rol de anfitriones: cursiva con presencia (era diminuto) ---- */
+.host .role,
+.host-full .hf-copy .role{
+  font-family:var(--font-script);
+  font-weight:700;
+  font-size:clamp(21px,2.4vw,27px);
+  color:var(--ocre-ink);
+  letter-spacing:.01em;
+  line-height:1.1;
+  margin:2px 0 6px;
+}
+.host-full .hf-copy .host-name{
+  font-family:var(--font-body);
+  font-size:14px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--gris);font-weight:600;margin-bottom:6px;
+}
+
+/* ---- Movimiento en tarjetas (menos rígido) ---- */
+.obj{transition:transform .55s cubic-bezier(.22,1,.36,1),background .4s ease,border-color .4s ease;}
+.obj:hover{transform:translateY(-7px);background:rgba(251,249,244,.1);border-color:rgba(212,194,163,.45);}
+.host{transition:transform .55s cubic-bezier(.22,1,.36,1);}
+.host:hover{transform:translateY(-6px);}
+.estado{transition:background .45s ease,padding-left .45s cubic-bezier(.22,1,.36,1);border-radius:12px;}
+.estado:hover{background:linear-gradient(90deg,rgba(212,194,163,.10),rgba(212,194,163,0));padding-left:14px;}
+.fase{transition:transform .5s cubic-bezier(.22,1,.36,1);}
+.fase:hover{transform:translateY(-5px);}
+.ep-meta-row .es-item,.esencial .es-item{transition:transform .4s ease;}
+/* micro-flote de los emblemas decorativos */
+@media (prefers-reduced-motion:no-preference){
+  .a-emblem{animation:floaty 6s ease-in-out infinite;}
+  .proximo .media .astral-mini img{animation:floaty 7s ease-in-out infinite;}
+}
+@keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
