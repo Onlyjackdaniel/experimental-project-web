@@ -97,7 +97,7 @@
       var status = cform.querySelector('.form-status');
       if (status) {
         status.innerHTML = '¡Gracias! Por ahora el envío directo aún no está conectado. ' +
-          'Escríbenos por <a href="https://ig.me/m/experimentalxproject" target="_blank" rel="noopener" style="color:var(--ocre-ink);font-weight:600">Instagram</a> ' +
+          'Escríbenos por <a href="https://www.instagram.com/experimentalxproject/" target="_blank" rel="noopener" style="color:var(--ocre-ink);font-weight:600">Instagram</a> ' +
           'y te respondemos al momento.';
         status.classList.add('show');
       }
