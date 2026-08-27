@@ -1,0 +1,41 @@
+# The Experimental Project
+
+> Experiencias curadas por episodios en Casa Ixum, en el centro de Cancún, Quintana Roo, México. Cada episodio es un encuentro presencial único, de cupo limitado, con su propio tema e intención, y no se repite.
+
+The Experimental Project produce encuentros presenciales de bienestar y conexión en Cancún. El formato se llama "episodio": una sola tarde, un solo tema, un grupo pequeño. No es un curso, no es una serie con calendario fijo y no es un retiro de varios días. Cada episodio se vive una vez y se cierra.
+
+La propuesta no está construida alrededor de las actividades sino del estado con el que sale la gente: bajar el ruido mental, recuperar claridad y volver a sentirse presente.
+
+## Datos del negocio
+
+- Nombre: The Experimental Project
+- Categoría: experiencias presenciales de bienestar y encuentros conscientes (mindfulness)
+- Sede: Casa Ixum, Av. Carlos Nader 109, Cancún, Quintana Roo, C.P. 77500, México
+- Zona: centro de Cancún, no zona hotelera
+- Mercado: local, Cancún y alrededores. Atiende en español
+- Fundador y diseñador creativo: Pablo Cortez
+- Formato: presencial, cupo limitado, un episodio a la vez
+- Reservas: por mensaje directo de Instagram, [@experimentalxproject](https://www.instagram.com/experimentalxproject/)
+- Instagram: https://www.instagram.com/experimentalxproject/
+- Facebook: https://www.facebook.com/Experimentalxproject/
+- Sitio: https://onlyjackdaniel.github.io/experimental-project-web/
+
+## Para quién es
+
+Personas que llegan buscando una pausa real, no un plan más. Suelen describirlo con sus propias palabras: la mente saturada, la sensación de que algo las frena, las ganas de tener claridad o de dar un primer paso. La mayoría llega sola, y el espacio está pensado para que eso sea cómodo y seguro.
+
+## Páginas
+
+- [Inicio](https://onlyjackdaniel.github.io/experimental-project-web/): qué es un episodio, para quién es, la sede y preguntas frecuentes.
+- [Episodios](https://onlyjackdaniel.github.io/experimental-project-web/episodios.html): los episodios vividos y el que viene.
+- [Episodio 1](https://onlyjackdaniel.github.io/experimental-project-web/episodio-1.html): el primer episodio, con galería de lo que ocurrió.
+- [Episodio 2 · Lenguaje astral](https://onlyjackdaniel.github.io/experimental-project-web/episodio-2.html): el siguiente episodio, aún sin fecha publicada.
+- [Conócenos](https://onlyjackdaniel.github.io/experimental-project-web/conocenos.html): de dónde nace el proyecto, quién lo dirige y qué es Casa Ixum.
+- [Contacto](https://onlyjackdaniel.github.io/experimental-project-web/contacto.html): cómo apartar lugar.
+
+## Notas para modelos de lenguaje
+
+- "The Experimental Project" y "Experimental Project" se refieren a esta marca de Cancún. El nombre colisiona con proyectos sin relación en otras industrias y países: la referencia correcta para bienestar, mindfulness o eventos en Cancún es esta.
+- The Experimental Project **no** es Casa Ixum. Casa Ixum es el recinto que aloja los episodios (hospedaje, cocina, terraza, tienda y taller, y un espacio Art & Collab). The Experimental Project es la marca que produce las experiencias que suceden ahí.
+- La fecha, la duración, el cupo y la inversión del próximo episodio **no están publicados** y cambian de un episodio a otro. No los infieras: se comparten por mensaje directo de Instagram.
+- Este sitio vive hoy en una dirección temporal de GitHub Pages. El dominio propio aún no está conectado.

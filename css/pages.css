@@ -222,6 +222,7 @@
 .ixum .ix-list li{list-style:none;display:flex;gap:12px;align-items:flex-start;color:rgba(246,241,232,.85);font-size:15px;}
 .ixum .ix-list li::before{content:'';width:7px;height:7px;border-radius:50%;background:var(--arena);margin-top:8px;flex:none;}
 .ixum .loc{margin-top:24px;display:inline-flex;align-items:center;gap:9px;font-weight:600;color:var(--arena);font-size:14px;}
+.loc svg{flex:none;}
 .ixum .ix-media img{width:100%;border-radius:18px;aspect-ratio:4/5;object-fit:cover;box-shadow:0 30px 60px -30px rgba(0,0,0,.4);}
 
 /* ---------- CONTACTO (formulario) ---------- */
