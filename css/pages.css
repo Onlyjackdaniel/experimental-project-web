@@ -445,3 +445,14 @@
   .proximo .media .astral-mini img{animation:floaty 7s ease-in-out infinite;}
 }
 @keyframes floaty{0%,100%{transform:translateY(0);}50%{transform:translateY(-9px);}}
+
+/* ---- ORIGEN (Conócenos): de dónde nace la marca ---- */
+.origen{background:var(--arena);}
+.origen .eyebrow{margin-bottom:16px;color:var(--marron);}  /* contraste AA sobre arena */
+.origen h2{font-size:clamp(30px,4.6vw,58px);color:var(--marron);max-width:16ch;}
+.origen p{max-width:54ch;color:var(--tinta-soft);font-size:16.5px;}
+.origen p + p{margin-top:16px;}
+.origen .og-lead{margin-top:26px;color:var(--tinta);font-size:clamp(17px,1.9vw,20px);}
+
+/* bios de anfitriones: párrafos encadenados */
+.host-full .hf-copy p + p{margin-top:14px;}
