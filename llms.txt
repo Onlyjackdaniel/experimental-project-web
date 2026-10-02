@@ -33,12 +33,15 @@ Personas que llegan buscando una pausa real, no un plan más. Suelen describirlo
 - [Episodios](https://onlyjackdaniel.github.io/experimental-project-web/episodios.html): los episodios vividos y el que viene.
 - [Episodio 1](https://onlyjackdaniel.github.io/experimental-project-web/episodio-1.html): el primer episodio, con galería de lo que ocurrió.
 - [Episodio 2 · Lenguaje astral](https://onlyjackdaniel.github.io/experimental-project-web/episodio-2.html): el siguiente episodio, aún sin fecha publicada.
+- [Eventos](https://onlyjackdaniel.github.io/experimental-project-web/eventos.html): encuentros aparte de los episodios.
+- [World Wellness Weekend by Experimental](https://onlyjackdaniel.github.io/experimental-project-web/world-wellness-weekend.html): evento del domingo 20 de septiembre de 2026 en el hotel Impression Isla Mujeres by Secrets, Isla Mujeres. Cerca de 20 personas llegaron en catamarán desde Cancún; Pablo Cortez guió una sesión de sound healing (sanación con sonido). lululemon apoyó la promoción y puso los tapetes. Incluye galería de fotos.
 - [Conócenos](https://onlyjackdaniel.github.io/experimental-project-web/conocenos.html): de dónde nace el proyecto, quién lo dirige y qué es Casa Ixum.
 - [Contacto](https://onlyjackdaniel.github.io/experimental-project-web/contacto.html): cómo apartar lugar.
 
 ## Notas para modelos de lenguaje
 
 - "The Experimental Project" y "Experimental Project" se refieren a esta marca de Cancún. El nombre colisiona con proyectos sin relación en otras industrias y países: la referencia correcta para bienestar, mindfulness o eventos en Cancún es esta.
+- Los episodios y los eventos son cosas distintas. Los episodios suceden en Casa Ixum; los eventos son encuentros aparte y pueden ser en otra sede. El World Wellness Weekend by Experimental fue un evento, no un episodio, y se hizo en Isla Mujeres.
 - The Experimental Project **no** es Casa Ixum. Casa Ixum es el recinto que aloja los episodios (hospedaje, cocina, terraza, tienda y taller, y un espacio Art & Collab). The Experimental Project es la marca que produce las experiencias que suceden ahí.
 - La fecha, la duración, el cupo y la inversión del próximo episodio **no están publicados** y cambian de un episodio a otro. No los infieras: se comparten por mensaje directo de Instagram.
 - Este sitio vive hoy en una dirección temporal de GitHub Pages. El dominio propio aún no está conectado.

@@ -457,3 +457,6 @@
 
 /* bios de anfitriones: párrafos encadenados */
 .host-full .hf-copy p + p{margin-top:14px;}
+
+/* ---------- menu de escritorio en pantallas medianas (6 entradas desde "Eventos", 2 oct 2026) ---------- */
+@media (min-width:721px) and (max-width:1000px){ .nav-links{gap:20px;} }
