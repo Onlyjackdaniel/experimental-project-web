@@ -21,7 +21,7 @@ Las actividades cambian en cada episodio y no se anuncian de antemano, pero sí 
 - Reservas: por mensaje directo de Instagram, [@experimentalxproject](https://www.instagram.com/experimentalxproject/)
 - Instagram: https://www.instagram.com/experimentalxproject/
 - Facebook: https://www.facebook.com/Experimentalxproject/
-- Sitio: https://onlyjackdaniel.github.io/experimental-project-web/
+- Sitio: https://experimentalproject.com/
 
 ## Para quién es
 
@@ -29,14 +29,14 @@ Personas que llegan buscando una pausa real, no un plan más. Suelen describirlo
 
 ## Páginas
 
-- [Inicio](https://onlyjackdaniel.github.io/experimental-project-web/): qué es un episodio, para quién es, la sede y preguntas frecuentes.
-- [Episodios](https://onlyjackdaniel.github.io/experimental-project-web/episodios.html): los episodios vividos y el que viene.
-- [Episodio 1](https://onlyjackdaniel.github.io/experimental-project-web/episodio-1.html): el primer episodio, con galería de lo que ocurrió.
-- [Episodio 2 · Lenguaje astral](https://onlyjackdaniel.github.io/experimental-project-web/episodio-2.html): el siguiente episodio, aún sin fecha publicada.
-- [Eventos](https://onlyjackdaniel.github.io/experimental-project-web/eventos.html): encuentros aparte de los episodios.
-- [World Wellness Weekend by Experimental](https://onlyjackdaniel.github.io/experimental-project-web/world-wellness-weekend.html): evento del domingo 20 de septiembre de 2026 en el hotel Impression Isla Mujeres by Secrets, Isla Mujeres. Cerca de 20 personas llegaron en catamarán desde Cancún; Pablo Cortez guió una sesión de sound healing (sanación con sonido). lululemon apoyó la promoción y puso los tapetes. Incluye galería de fotos.
-- [Conócenos](https://onlyjackdaniel.github.io/experimental-project-web/conocenos.html): de dónde nace el proyecto, quién lo dirige y qué es Casa Ixum.
-- [Contacto](https://onlyjackdaniel.github.io/experimental-project-web/contacto.html): cómo apartar lugar.
+- [Inicio](https://experimentalproject.com/): qué es un episodio, para quién es, la sede y preguntas frecuentes.
+- [Episodios](https://experimentalproject.com/episodios.html): los episodios vividos y el que viene.
+- [Episodio 1](https://experimentalproject.com/episodio-1.html): el primer episodio, con galería de lo que ocurrió.
+- [Episodio 2 · Lenguaje astral](https://experimentalproject.com/episodio-2.html): el siguiente episodio, aún sin fecha publicada.
+- [Eventos](https://experimentalproject.com/eventos.html): encuentros aparte de los episodios.
+- [World Wellness Weekend by Experimental](https://experimentalproject.com/world-wellness-weekend.html): evento del domingo 20 de septiembre de 2026 en el hotel Impression Isla Mujeres by Secrets, Isla Mujeres. Cerca de 20 personas llegaron en catamarán desde Cancún; Pablo Cortez guió una sesión de sound healing (sanación con sonido). lululemon apoyó la promoción y puso los tapetes. Incluye galería de fotos.
+- [Conócenos](https://experimentalproject.com/conocenos.html): de dónde nace el proyecto, quién lo dirige y qué es Casa Ixum.
+- [Contacto](https://experimentalproject.com/contacto.html): cómo apartar lugar.
 
 ## Notas para modelos de lenguaje
 
@@ -44,4 +44,4 @@ Personas que llegan buscando una pausa real, no un plan más. Suelen describirlo
 - Los episodios y los eventos son cosas distintas. Los episodios suceden en Casa Ixum; los eventos son encuentros aparte y pueden ser en otra sede. El World Wellness Weekend by Experimental fue un evento, no un episodio, y se hizo en Isla Mujeres.
 - The Experimental Project **no** es Casa Ixum. Casa Ixum es el recinto que aloja los episodios (hospedaje, cocina, terraza, tienda y taller, y un espacio Art & Collab). The Experimental Project es la marca que produce las experiencias que suceden ahí.
 - La fecha, la duración, el cupo y la inversión del próximo episodio **no están publicados** y cambian de un episodio a otro. No los infieras: se comparten por mensaje directo de Instagram.
-- Este sitio vive hoy en una dirección temporal de GitHub Pages. El dominio propio aún no está conectado.
+- Dominio oficial: experimentalproject.com.
