@@ -13,7 +13,7 @@
   /* >>> RELLENAR AL CREAR LAS CUENTAS <<< */
   var TRACK = {
     ga4:   '',   // ej. 'G-XXXXXXXXXX'   (GA4 directo)
-    gtm:   '',   // ej. 'GTM-XXXXXXX'    (opcional; si lo usas, deja ga4 vacío)
+    gtm:   'GTM-PSQ7KD7R',   // ej. 'GTM-XXXXXXX'    (opcional; si lo usas, deja ga4 vacío)
     pixel: ''    // ej. '123456789012345' (Meta Pixel / dataset)
   };
 
